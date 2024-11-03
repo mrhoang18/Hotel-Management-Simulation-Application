@@ -1,5 +1,5 @@
 # Tên file thực thi
-TARGET = Hotel_App
+TARGET = Hotel-Managemen-Simulation-Application
 
 # Thư mục chứa file header, file nguồn và file thực thi
 INCDIR = Inc
@@ -33,7 +33,8 @@ $(BINDIR)/%.o: $(SRCDIR)/%.cpp | $(BINDIR)
 
 # Rule để dọn dẹp các file biên dịch
 clean:
-	rm -f $(BINDIR)/*.o $(BINDIR)/$(TARGET)
+	if exist $(BINDIR)\*.o del /f $(BINDIR)\*.o
+	if exist $(BINDIR)\$(TARGET) del /f $(BINDIR)\$(TARGET)
 
 # Rule để chạy chương trình từ thư mục bin
 run: all
