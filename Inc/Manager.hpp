@@ -4,6 +4,8 @@
 #include "Menu.hpp"
 #include "UI.hpp"
 #include "EmployeeManager.hpp"
+#include "RoomManager.hpp"
+#include "ServiceManager.hpp"
 
 class Manager {
 public:
@@ -23,11 +25,14 @@ private:
     void deleteEmployee();   // Xóa nhân viên
     void listEmployees();    // Liệt kê nhân viên
 
+    RoomManager roomManager; // Quản lý phòng
+    
     void addRoom();          // Thêm phòng
     void editRoom();         // Sửa thông tin phòng
     void deleteRoom();       // Xóa phòng
     void listRooms();        // Liệt kê phòng
 
+    ServiceManager serviceManager; // Quản lý dịch vụ
     void addService();       // Thêm dịch vụ
     void editService();      // Sửa thông tin dịch vụ
     void deleteService();    // Xóa dịch vụ

@@ -26,7 +26,6 @@ void Account::setPassword(const std::string& password) {
 }
 
 // Kiểm tra nếu tài khoản đã tồn tại trong danh sách
-
 bool Account::accountExists(const std::vector<Account>& accountList, const std::string& username) {
         for (const auto& account : accountList) {
             if (account.getUsername() == username) {

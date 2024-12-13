@@ -6,24 +6,24 @@
 
 int main() {
 
-    // EmployeeManager employeeManager;
+    EmployeeManager employeeManager;
 
-    // // Thêm nhân viên mới
+    // Thêm nhân viên mới
     // employeeManager.addEmployee(accountList, "Trung", "123456789", "Tạp vụ");
     // employeeManager.addEmployee(accountList, "Thái", "567891237", "Bảo vệ");
     // employeeManager.addEmployee(accountList, "Sơn", "123897519", "Đầu bếp");
     // employeeManager.addEmployee(accountList, "Nam", "987654321", "Lễ Tân");
 
-    // // Hiển thị danh sách nhân viên
+    // Hiển thị danh sách nhân viên
     // employeeManager.listEmployees();
 
-    // // Sửa thông tin nhân viên theo tên
+    // Sửa thông tin nhân viên theo tên
     // employeeManager.editEmployeeByName("Trung", "Trung Nguyen", "Quản lý Tạp vụ");
 
-    // // Xóa nhân viên theo ID (số điện thoại)
+    // Xóa nhân viên theo ID (số điện thoại)
     // employeeManager.deleteEmployeeById("567891237");
 
-    // // Hiển thị lại danh sách nhân viên
+    // Hiển thị lại danh sách nhân viên
     // employeeManager.listEmployees();
 
 
@@ -42,6 +42,7 @@ int main() {
     std::cin >> account;
 
     // Nhập mật khẩu
+
     std::cout << "Nhập mật khẩu: ";
     std::cin >> password;
 

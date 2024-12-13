@@ -12,11 +12,11 @@ std::string EmployeeManager::generateEmployeeId(const std::string& position) {
     // Tạo tiền tố ID theo chức vụ
     if (position == "TV") {
         ss << "TV";
-    } else if (position == "Bảo vệ") {
+    } else if (position == "BV ") {
         ss << "BV";
-    } else if (position == "Đầu bếp") {
-        ss << "DV";
-    } else if (position == "Lễ Tân") {
+    } else if (position == "DB") {
+        ss << "DB";
+    } else if (position == "LT") {
         ss << "LT";
     } else {
         ss << "NV";  // Mặc định nếu không có chức vụ đặc biệt
